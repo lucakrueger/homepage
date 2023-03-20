@@ -6,6 +6,7 @@ html, body {
 * {
     font-family: 'Poppins', sans-serif !important;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 
 .root {
@@ -14,4 +15,12 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.root .background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
 }
