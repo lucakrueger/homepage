@@ -89,3 +89,19 @@
 hr {
     
 }
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+}
+
+.icon {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.icon img {
+    filter: invert(100%)
+}
