@@ -1,3 +1,5 @@
 exports.routes = {
-    '/': 'landing.html'
+    '/': 'landing.html',
+    '/contact': 'contact.html',
+    '/legal': 'legal.html',
 }
