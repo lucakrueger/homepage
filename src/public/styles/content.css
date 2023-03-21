@@ -1,207 +1,4 @@
-
-
-.panels .left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 35vw;
-    height: 80vh;
-}
-
-.container {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 4vh;
-}
-
-.title {
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-}
-
-.title span {
-    height: 4rem;
-    font-weight: 800;
-}
-
-.subtitle {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-}
-
-.subtitle span {
-    height: 2rem;
-}
-
-.subtitle .icon {
-    height: 2rem;
-}
-
-.panels .right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(35vw * 1.618);
-    height: 80vh;
-}
-
-.button {
-    height: 3rem;
-    width: 11rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 5px;
-    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.0);
-}
-
-.button span {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.95);
-}
-
-.button span:hover {
-    color: rgba(255, 255, 255, 0.8);
-    transition: color 0.3s;
-}
-
-.button:hover {
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
-    transition: backdrop-filter 0.3s;
-    transition: -webkit-backdrop-filter 0.3s;
-    transition: box-shadow 0.5s;
-    cursor: pointer;
-}
-
-hr {
-    
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.6vw;
-}
-
-.icon {
-    width: 1.5vw;
-    height: 1.5vw;
-    cursor: pointer;
-}
-
-.icon img {
-    filter: invert(100%)
-}
-
-.icon:hover {
-    opacity: 80%;
-    transition: opacity 0.3s;
-}
-
-.credits {
-    position: fixed;
-    width: 12%;
-    height: 4rem;
-    bottom: 2vh;
-    left: 4vw;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: row;
-    gap: 0.4vw;
-    font-size: 0.7rem;
-    opacity: 50%;
-}
-
-.credits .icon {
-    width: 0.7rem;
-    height: 0.7rem;
-    margin-bottom: 0.3vh;
-}
-
-.credits a:hover {
-    cursor: pointer;
-    opacity: 80%;
-    transition: opacity 0.3s;
-}
-
-.footer {
-    position: fixed;
-    width: 80%;
-    height: 4rem;
-    bottom: 2vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2vw;
-}
-
-.footer .link-button {
-    font-size: 0.7rem;
-}
-
-.link-button span {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.link-button:hover {
-    cursor: pointer;
-    opacity: 80%;
-    transition: opacity 0.3s;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-@media (min-width:320px) {
-    .panels {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 20vh;
-    }
-    .right {
-        max-height: 10vh;
-    }
-    .left {
-        max-height: 10vh;
-    }
-    .icon {
-        width: 2rem;
-        height: 2rem;
-        cursor: pointer;
-    }
-    .icons {
-        gap: 0.5rem;
-    }
-    .no-mobile {
-        display: none;
-    }
-}
-
-@media (min-width:961px) {
+@media (orientation: landscape) {
     .panels {
         position: fixed;
         width: 100%;
@@ -212,10 +9,357 @@ a:link {
         flex-direction: row;
         gap: 1vw;
     }
+    
+    .panels .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 35vw;
+        height: 80vh;
+    }
+    
+    .container {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+    }
+    
+    .title {
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    
+    .title span {
+        height: 4rem;
+        font-weight: 800;
+    }
+    
+    .subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    
+    .subtitle span {
+        height: 2rem;
+    }
+    
+    .subtitle .icon {
+        height: 2rem;
+    }
+    
+    .panels .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(35vw * 1.618);
+        height: 80vh;
+    }
+    
+    .button {
+        height: 3rem;
+        width: 11rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 5px;
+        box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.0);
+    }
+    
+    .button span {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.95);
+    }
+    
+    .button span:hover {
+        color: rgba(255, 255, 255, 0.8);
+        transition: color 0.3s;
+    }
+    
+    .button:hover {
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
+        transition: backdrop-filter 0.3s;
+        transition: -webkit-backdrop-filter 0.3s;
+        transition: box-shadow 0.5s;
+        cursor: pointer;
+    }
+    
+    hr {
+        
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .icon img {
+        filter: invert(100%)
+    }
+    
+    .icon:hover {
+        opacity: 80%;
+        transition: opacity 0.3s;
+    }
+    
+    .credits {
+        position: fixed;
+        width: 12%;
+        height: 4rem;
+        bottom: 2vh;
+        left: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        gap: 0.4vw;
+        font-size: 0.7rem;
+        opacity: 50%;
+    }
+    
+    .credits .icon {
+        width: 0.7rem;
+        height: 0.7rem;
+        margin-bottom: 0.3vh;
+    }
+    
+    .credits a:hover {
+        cursor: pointer;
+        opacity: 80%;
+        transition: opacity 0.3s;
+    }
+    
+    .footer {
+        position: fixed;
+        width: 80%;
+        height: 4rem;
+        bottom: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2vw;
+    }
+    
+    .footer .link-button {
+        font-size: 0.7rem;
+    }
+    
+    .link-button span {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .link-button:hover {
+        cursor: pointer;
+        opacity: 80%;
+        transition: opacity 0.3s;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
 }
 
-@media (min-width:1170px) {
-    .no-mobile {
-        display:block
+@media (orientation: portrait) {
+    .panels {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1vw;
+    }
+    
+    .panels .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 35vw;
+        height: 5rem;
+    }
+    
+    .container {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4vh;
+    }
+    
+    .title {
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    
+    .title span {
+        height: 4rem;
+        font-weight: 800;
+    }
+    
+    .subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    
+    .subtitle span {
+        height: 2rem;
+    }
+    
+    .subtitle .icon {
+        height: 2rem;
+    }
+    
+    .panels .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(35vw * 1.618);
+        height: 20rem;
+    }
+    
+    .button {
+        height: 3rem;
+        width: 11rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 5px;
+        box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.0);
+    }
+    
+    .button span {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.95);
+    }
+    
+    .button span:hover {
+        color: rgba(255, 255, 255, 0.8);
+        transition: color 0.3s;
+    }
+    
+    .button:hover {
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
+        transition: backdrop-filter 0.3s;
+        transition: -webkit-backdrop-filter 0.3s;
+        transition: box-shadow 0.5s;
+        cursor: pointer;
+    }
+    
+    hr {
+        
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    
+    .icon {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+    
+    .icon img {
+        filter: invert(100%)
+    }
+    
+    .icon:hover {
+        opacity: 80%;
+        transition: opacity 0.3s;
+    }
+    
+    .credits {
+        position: fixed;
+        width: 12%;
+        height: 4rem;
+        bottom: 2vh;
+        left: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        gap: 0.4vw;
+        font-size: 0.8rem;
+        opacity: 50%;
+    }
+    
+    .credits .icon {
+        width: 0.7rem;
+        height: 0.7rem;
+        margin-bottom: 0.3vh;
+    }
+    
+    .credits a:hover {
+        cursor: pointer;
+        opacity: 80%;
+        transition: opacity 0.3s;
+    }
+    
+    .footer {
+        position: fixed;
+        width: 80%;
+        height: 4rem;
+        bottom: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2vw;
+    }
+    
+    .footer .link-button {
+        font-size: 0.8rem;
+    }
+    
+    .link-button span {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .link-button:hover {
+        cursor: pointer;
+        opacity: 80%;
+        transition: opacity 0.3s;
+    }
+    
+    a:link {
+        text-decoration: none;
     }
 }
