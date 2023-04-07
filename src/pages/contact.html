@@ -32,7 +32,7 @@
                         <div class="title">
                             <span>Contact</span>
                         </div>
-                        <form action="/contactreq" method="GET" class="subtitle">
+                        <div class="subtitle">
                             <hr>
                             <span class="heading">Full Name</span>
                             <input type="text" placeholder="First Last" id="fullname" name="fullname" required>
@@ -45,12 +45,12 @@
                             <hr>
                             <div class="g-recaptcha" data-sitekey="6Lf9wB0lAAAAAHe881KrW0QbT0S7Qbs-h0LUC_hZ" data-callback="recaptchaCallback" id="captcha" name="captcha" required></div>
                             <hr>
-                            <button disabled type="submit" value="submit" id="submit" name="submit" class="button">
+                            <button disabled id="submit" name="submit" class="button" onclick="submitContact()">
                                 <span>Submit</span>
                             </button>
                             <hr>
                             <hr>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
