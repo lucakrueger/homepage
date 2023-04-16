@@ -1,5 +1,5 @@
 function recaptchaCallback(token) {
-    fetch('http://luca-krueger.com/legalcaptcha', {
+    fetch('https://luca-krueger.com/legalcaptcha', {
         method: 'POST',
         mode: 'cors',
         credentials: 'same-origin',
