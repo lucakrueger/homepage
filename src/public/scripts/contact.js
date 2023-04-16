@@ -4,7 +4,7 @@ function recaptchaCallback(token) {
 }
 
 function submitContact() {
-    fetch('https://luca-krueger.com/contactreq', {
+    fetch('https://contact.luca-krueger.com/contactreq', {
         method: 'POST',
         mode: 'cors',
         credentials: 'same-origin',

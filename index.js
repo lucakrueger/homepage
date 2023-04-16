@@ -47,9 +47,9 @@ app.post('/contactreq', (req, res) => {
       if (!error && response.statusCode == 200) {
         let body = JSON.parse(bodyString)
         if(body.success == true) {
-          res.redirect('https://luca-krueger.com/success')
+          res.redirect('https://contact.luca-krueger.com/success')
         } else {
-          res.redirect('https://luca-krueger.com/failed')
+          res.redirect('https://contact.luca-krueger.com/failed')
         }
       }
     }
